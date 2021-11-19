@@ -96,27 +96,31 @@ a {
   background-size: cover;
   max-width: 100%;
 }
-  .sobre-conteudo-section:nth-child(even) {
-    background-color: #ac9a8e ;
-  }
-  .sobre-conteudo-section:nth-child(odd) {
-    background-color:#e7d6cc;
-  }
+.sobre-conteudo-section{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.sobre-conteudo-section:nth-child(even) {
+  background-color: #ac9a8e ;
+}
+.sobre-conteudo-section:nth-child(odd) {
+  background-color:#e7d6cc;
+}
 
-  .sobre-equipe-grid{
-    display: flex;
-    justify-content: center;
-    text-align: center;    
-  }
+.sobre-equipe-grid{
+  display: flex;
+  justify-content: center;
+  text-align: center;    
+}
 
-  .sobre-equipe-card{
-    /* border: 3px solid red; */
+.sobre-equipe-card{
+  /* border: 3px solid red; */
 
-  }
+}
 
-  .about-profile-pic{
-    margin-top: 0.5rem;
-    border-radius: 50%;
-    max-width: 150px;
-  }
+.about-profile-pic{
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  max-width: 150px;
+}
 
