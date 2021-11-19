@@ -15,7 +15,7 @@ a {
   }
 }
 
-
+/* PAGINA LOGIN */
 .form-signin {
   width: 100%;
   max-width: 330px;
@@ -48,3 +48,33 @@ a {
   justify-content: space-between;
 }
 
+/* PAGINA SOBRE */
+.about-div-title{
+  background-color: black;
+  opacity: 0.8;
+  margin-right: 50%;
+  margin-left: 5%;
+}
+.about-title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-left: 2rem;
+  padding: 5%;
+  color: #3E3A3B;
+  text-align: center;
+}
+.about-banner-img{
+  padding-top: 15%;
+  background-image: url('/images/aboutus.jpg');
+  height: 500px;
+  background-size: cover;
+  max-width: 100%;
+}
+  .sobre-conteudo-section:nth-child(even) {
+    background-color: #ac9a8e ;
+    /* background: #e7d6cc;   */
+  }
+  .sobre-conteudo-section:nth-child(odd) {
+    background-color:#e7d6cc;
+    /* background: ;   */
+  }
