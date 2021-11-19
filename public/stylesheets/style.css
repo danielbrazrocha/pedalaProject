@@ -1,8 +1,28 @@
+:root {
+  --primary: #E2AE28;
+  --secundary: #00A2AB;
+  --green: #00A653; 
+  --border: #DCDCDC;
+  --red: #df1717;
+  --gray: #b9b9b9;
+  --lightgray: #555555;
+  --lightgrayalt: #9c9c9c;
+  --darkgray: #333333;
+  --textgray: #4F4F4F;
+  --lighttextgray: #808080;
+  --black: #000000;
+  --lightborder: #EFEFEF;
+  --link: #00ADFF;
+  --cardbackground: #F6F6F6;
+}
+
+
 body {
 }
 
 a {
-  color: #00B7FF;
+  color: inherit;
+  text-decoration: none;
 }
 
 @media (max-width: 992px) {
@@ -47,6 +67,12 @@ a {
   display: flex;
   justify-content: space-between;
 }
+/* HEADER */
+.nav-link:hover{
+  color: var(--primary) !important;
+}
+
+
 
 /* PAGINA SOBRE */
 .about-div-title{
@@ -72,9 +98,25 @@ a {
 }
   .sobre-conteudo-section:nth-child(even) {
     background-color: #ac9a8e ;
-    /* background: #e7d6cc;   */
   }
   .sobre-conteudo-section:nth-child(odd) {
     background-color:#e7d6cc;
-    /* background: ;   */
   }
+
+  .sobre-equipe-grid{
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+  }
+
+  .sobre-equipe-card{
+    /* border: 3px solid red; */
+
+  }
+
+  .about-profile-pic{
+    margin-top: 0.5rem;
+    border-radius: 50%;
+    max-width: 150px;
+  }
+
