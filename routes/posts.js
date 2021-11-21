@@ -5,6 +5,4 @@ const PostsController = require('../controllers/PostsController');
 // GET Posts Page
 router.get('/', PostsController.index);
 
-
-
 module.exports = router;

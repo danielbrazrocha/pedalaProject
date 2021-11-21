@@ -5,6 +5,4 @@ const SobreController = require('../controllers/SobreController');
 // GET Sobre Page
 router.get('/', SobreController.index);
 
-
-
 module.exports = router;

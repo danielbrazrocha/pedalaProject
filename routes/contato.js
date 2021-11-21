@@ -5,6 +5,4 @@ const ContatoController = require('../controllers/ContatoController');
 // GET contato Page
 router.get('/', ContatoController.index);
 
-
-
 module.exports = router;
