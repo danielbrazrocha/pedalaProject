@@ -11,11 +11,10 @@ var cadastroRouter = require('./src/routes/cadastro');
 var postsRouter = require('./src/routes/posts');
 var sobreRouter = require('./src/routes/sobre');
 
-
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'src', 'views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
@@ -24,14 +23,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//Rotes
 app.use('/', indexRouter);
 app.use('/contato', contatoRouter);
 app.use('/login', loginRouter);
 app.use('/cadastro', cadastroRouter);
 app.use('/posts', postsRouter);
 app.use('/sobre', sobreRouter);
-
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -47,6 +45,11 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+//create server
+app.listen(3000, () => {
+  console.log('servidor rodando na porta http://localhost:' + 3000)
 });
 
 module.exports = app;
