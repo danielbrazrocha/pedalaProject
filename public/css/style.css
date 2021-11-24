@@ -1,0 +1,5 @@
+/* HEADER */
+.nav-link:hover{
+    color: var(--primary) !important;
+  }
+  
