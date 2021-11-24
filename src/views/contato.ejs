@@ -1,46 +1,64 @@
 <%- include('./partials/header') %>
 
-<main class="container">
-  <section class="banner">
-      <div >
-          <p>CONTATO </p>
-      </div>
-  </section>
-  <section class="servicos">
-      <div>
-          <h2>serviços</h2>
-          <div class="items">
+    <main class="container">
+        <section class="banner">
+            <div>
+                <p>CONTATO </p>
+            </div>
+        </section>
+        <section class="sobre">
+            <div>
+                <div class="text">
+                    <h3>Sed ut perspiciatis unde iste natus error sit voluptatem accusantium doloremque laudantium,
+                    </h3>
+                    <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                        vitae
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="servicos">
+            <div>
+                <h2>Contato</h2>
+                <div class="items">
+                    <article>
+                        <h1>Pedala</h1>
+                        <p>
+                            Avenida Rebouças, 1164/33 - Pinheiros, São Paulo
+                        </p>
+                    </article>
+                    <article>
+                        <div id="mapa"></div>
+                        <script>
+                            function inicializar() {
+                                var pedalaBike = { lat: -23.5607, lng: -46.67309 };
+
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    zoom: 15,
+                                    center: coordenadas
+                                });
+
+                                var marker = new google.maps.Marker({
+                                    position: coordenadas,
+                                    map: mapa,
+                                    title: 'My marker'
+                                });
+                            }
+                        </script>
+                        <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+                            </script>
+                    </article>
+                    <!-- </article>
               <article>
                   <div class="thumb"></div>
                   <h3>banho completo</h3>
                   <h4>R$40,00</h4>
-              </article>
-              <article>
-                  <div class="thumb"></div>
-                  <h3>banho completo</h3>
-                  <h4>R$40,00</h4>
-              </article>
-              <article>
-                  <div class="thumb"></div>
-                  <h3>banho completo</h3>
-                  <h4>R$40,00</h4>
-              </article>
-          </div>
-      </div>
-  </section>
-  <section class="sobre">
-      <div >
-          <div class="text">
-              <h3>Sed ut perspiciatis unde iste natus error sit voluptatem accusantium doloremque laudantium,
-              </h3>
-              <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                  vitae
-             </p>
-          </div>
-      </div>
-  </section>
-  
-</main>
+              </article> -->
+                </div>
+            </div>
+        </section>
+    </main>
 
 
-<%- include('./partials/footer') %>
+    <%- include('./partials/footer') %>
