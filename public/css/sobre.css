@@ -25,10 +25,10 @@
   padding-bottom: 3rem;
 }
 .sobre-conteudo-section:nth-child(even) {
-  background-color: #ac9a8e;
+  background-color: var(--quartenaria) !important;
 }
 .sobre-conteudo-section:nth-child(odd) {
-  background-color: #e7d6cc;
+  background-color: var(--quinaria) !important;
 }
 
 .sobre-equipe-grid {
@@ -38,7 +38,7 @@
 }
 
 .sobre-equipe-card {
-  /* border: 3px solid red; */
+  /* border: 3px solid red; */  
 }
 
 .about-profile-pic {
